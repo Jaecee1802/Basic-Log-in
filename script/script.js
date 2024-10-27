@@ -14,22 +14,18 @@ loginButton.addEventListener("click", (e) => {
     }
 
     else if(username != "crim" && password != "password"){
-        loginErrorMess.innerHTML = "Both username and password are incorrect!";
+        loginErrorMess.innerHTML = "Enter both fields!";
         loginErrorMess.style.color = "Red";
     }
 
-    else if(username != "crim"){
+    else if(username != "crim" && password === "password"){
         loginErrorMess.innerHTML = "Incorrect Username!";
         loginErrorMess.style.color = "Red";
     }
 
-    else if(password != "password"){
+    else if(username === "crim" && password != "password"){
         loginErrorMess.innerHTML = "Incorrect Password!";
         loginErrorMess.style.color = "Red";
     }
 
-    else{
-        loginErrorMess.innerHTML = "Enter the required fields!";
-        loginErrorMess.style.color = "Red";
-    }
 })
