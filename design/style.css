@@ -1,0 +1,23 @@
+body{
+    font-family: Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    padding: 1vw;
+    border-radius: 10px;
+}
+
+.log-in-button{
+    margin-top: 40px;
+}
+
+button{
+    padding: 10px 20px 10px 20px;
+}
